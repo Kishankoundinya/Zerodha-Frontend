@@ -1,6 +1,6 @@
 import React from 'react'
 import googlePlay from '../../assets/Images/googlePlayBadge.svg'
-import appleStore from '../../assets/Images/appStoreBadge.svg'
+import appleStore from '../../assets/Images/appstoreBadge.svg'
 
 const LeftSection = ({ ImgURL, productHeading, productDescription, linkOne,LinkOneName, linkTwo,LinkTwoName, playStore, appStore }) => {
     return (
