@@ -1,6 +1,6 @@
 import React from 'react'
 import ZerodhaFund from '../../assets/Images/zerodhaFundhouse.png'
-import sensiBull from '../../assets/Images/sensibulllogo.svg'
+import sensiBull from '../../assets/Images/sensibullLogo.svg'
 import streak from '../../assets/Images/streaklogo.png'
 import smallcase from '../../assets/Images/smallcaseLogo.png'
 import goldenpi from '../../assets/Images/goldenpiLogo.png'
