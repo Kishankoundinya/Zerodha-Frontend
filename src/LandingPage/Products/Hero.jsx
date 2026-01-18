@@ -3,7 +3,7 @@ import LeftSection from './LeftSection'
 import RightSection from './RightSection'
 import consoleImg from '../../assets/Images/console.png'
 import coin from '../../assets/Images/coin.png'
-import kiteConnect from '../../assets/Images/kiteConnect.png'
+import kiteConnect from '../../assets/Images/kiteconnect.png'
 import VarsityMobile from '../../assets/Images/varsity.svg'
 
 import kite from '../../assets/Images/kite.png'
