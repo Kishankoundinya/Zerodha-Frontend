@@ -1,5 +1,5 @@
 import React from 'react'
-import largestBroker from '../../assets/Images/largestBroker.svg'
+import largestBroker from '../../assets/Images/HeroImg.svg'
 import pressLogos from '../../assets/Images/pressLogos.png'
 
 const Awards = () => {

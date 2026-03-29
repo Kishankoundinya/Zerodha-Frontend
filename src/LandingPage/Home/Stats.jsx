@@ -1,5 +1,5 @@
 import React from 'react'
-import ecoSystem from '../../assets/Images/ecosystem.png'
+import ecoSystem from '../../assets/Images/ecosystem.svg'
 
 const Stats = () => {
   return (

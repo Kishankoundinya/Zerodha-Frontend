@@ -4,7 +4,7 @@ import Awards from './Awards'
 import Stats from './Stats'
 import Pricing from './Pricing'
 import Education from './Education'
-import OpenAccount from '../OpenAccount'
+
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 const HomePage = () => {
@@ -16,7 +16,7 @@ const HomePage = () => {
     <Stats/>
     <Pricing/>
     <Education/>
-    <OpenAccount/>
+   
     
     </>
   )
