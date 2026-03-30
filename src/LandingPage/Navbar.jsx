@@ -11,16 +11,11 @@ const Navbar = () => {
   };
 
   const navItems = [
-    
-    { id: 1, label: 'About', to: '/About' },
-    { id: 2, label: 'Products', to: '/Products' },
-    { id: 3, label: 'Pricing', to: '/Pricing' },
-    { id: 4, label: 'Support', to: '/Support' },
-    { id: 5, label: 'Login', to: '/login' },
+    { id: 1, label: 'Login', to: '/login' },
   ];
 
   return (
-    <nav className="bg-white shadow-sm border-b-[0.5px] border-gray-300">
+    <nav className="bg shadow-sm ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           
@@ -36,7 +31,7 @@ const Navbar = () => {
                 <Link
                   key={item.id}
                   to={item.to}
-                  className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition duration-300"
+                  className="text-white font-serif hover:text-blue-500 px-3 py-2 rounded-md text-lg font-medium transition duration-300"
                 >
                   {item.label}
                 </Link>

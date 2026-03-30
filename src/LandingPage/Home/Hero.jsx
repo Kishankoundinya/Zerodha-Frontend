@@ -1,24 +1,55 @@
 import React from 'react'
-import HomeHero from '../../assets/Images/homeHero.png'
 import { useNavigate } from 'react-router-dom'
-import HeroImg from '../../assets/Images/HeroImg.svg'
+import HeroImg from '../../assets/Images/HeroImg.gif'
+import videoSrc from '../../assets/video/bgvideo.mp4'
 
 const Hero = () => {
   const dashboardUrl = import.meta.env.VITE_DASHBOARD_URL
   const navigate = useNavigate()
+  
   return (
-    <div>
-      <div className='flex items-center'>
-        <div className='w-[50%] p-20'>
-          <h1 className='text-4xl'>Invest in everything</h1>
-          <p className='text-gray-500 mt-2'>Online platforms to invest in stocks, derivatives, mutual funds,and more</p>
-          <button onClick={() => navigate(dashboardUrl)} className='bg-blue-500 p-2 rounded-md mt-2 text-white '>Signup Now!</button>
-
+    <div className="relative min-h-screen overflow-hidden ">
+      {/* Video Background */}
+      <div className="absolute inset-0 w-full h-full">
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          className="w-full h-full object-cover"
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+        {/* Optional overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40"></div>
+      </div>
+      
+      {/* Content */}
+      <div className='relative z-10 flex flex-col-reverse md:flex-row items-center min-h-screen px-6 md:px-12 lg:px-20 gap-10'>
+        <div className='w-full md:w-[50%] text-center md:text-left'>
+          <h1 className='text-3xl sm:text-4xl lg:text-5xl font-serif leading-tight text-white'>
+            Powering Your Trades. Elevating Your Growth.
+          </h1>
+          
+          <p className='text-gray-200 mt-4 text-sm sm:text-base lg:text-lg max-w-md mx-auto md:mx-0'>
+            All-in-one trading platform designed for beginners and pros alike.
+          </p>
+          
+          <button 
+            onClick={() => navigate(dashboardUrl)} 
+            className='bg-blue-600 hover:bg-blue-700 transition-all duration-300 px-6 py-3 rounded-lg mt-6 text-white text-sm sm:text-base shadow-md hover:shadow-lg'
+          >
+            Signup Now!
+          </button>
         </div>
-        <div className='w-[50%] flex justify-center items-center'>
-          <img src={HeroImg} alt="" />
-        </div>
 
+        <div className='w-full md:w-[50%] flex justify-center items-center'>
+          <img 
+            src={HeroImg} 
+            alt="Hero illustration" 
+            className='w-[80%] sm:w-[70%] md:w-full max-w-md lg:max-w-lg'
+          />
+        </div>
       </div>
     </div>
   )
