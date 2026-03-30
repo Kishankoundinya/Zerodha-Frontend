@@ -4,7 +4,7 @@ import Awards from './Awards'
 import Stats from './Stats'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import videoSrc from '../../assets/video/bgvideo.mp4'
+import videoSrc from '../../../public/video/bgvideo.mp4'
 
 const HomePage = () => {
   return (
