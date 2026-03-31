@@ -1,25 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import HeroImg from '../../assets/Images/HeroImg.gif'
-import videoSrc from '../../../public/video/bgvideo.mp4'
+import bgGif from '../../assets/Images/bgvideo.gif'
 
 const Hero = () => {
   const dashboardUrl = import.meta.env.VITE_DASHBOARD_URL
   const navigate = useNavigate()
   
   return (
-    <div className="relative min-h-screen overflow-hidden ">
-      {/* Video Background */}
+    <div className="relative min-h-screen overflow-hidden">
+      {/* GIF Background */}
       <div className="absolute inset-0 w-full h-full">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
+        <img
+          src={bgGif}
+          alt="Background"
           className="w-full h-full object-cover"
-        >
-          <source src={videoSrc} type="video/mp4" />
-        </video>
+        />
         {/* Optional overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
