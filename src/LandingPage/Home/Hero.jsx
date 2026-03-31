@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import HeroImg from '../../assets/Images/HeroImg.gif'
-import bgGif from '../../assets/Images/bgvideo.gif'
+import bgGif from '../../assets/Images/Newvideobg.gif'
 
 const Hero = () => {
   const dashboardUrl = import.meta.env.VITE_DASHBOARD_URL

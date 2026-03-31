@@ -4,7 +4,7 @@ import Awards from './Awards'
 import Stats from './Stats'
 import Navbar from '../Navbar'
 import Footer from '../Footer'
-import bgGif from '../../assets/Images/bgvideo.gif'
+import bgGif from '../../assets/Images/Newvideobg.gif'
 
 const HomePage = () => {
   return (
