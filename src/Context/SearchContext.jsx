@@ -1,9 +1,9 @@
 import React, { createContext, useState, useContext, useEffect } from 'react';
 
-// Create Context
+
 const SearchContext = createContext();
 
-// Custom Hook to use Search Context
+
 export const useSearch = () => {
   const context = useContext(SearchContext);
   if (!context) {
@@ -12,15 +12,15 @@ export const useSearch = () => {
   return context;
 };
 
-// Context Provider Component
+
 export const SearchProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState(() => {
-    // Initialize from localStorage if available
+    
     const saved = localStorage.getItem('stockSearchValue');
-    return saved || 'AAPL'; // Default to AAPL
+    return saved || 'AAPL'; 
   });
 
-  // Update localStorage whenever searchValue changes
+  
   useEffect(() => {
     localStorage.setItem('stockSearchValue', searchValue);
   }, [searchValue]);

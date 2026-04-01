@@ -9,18 +9,18 @@ const Hero = () => {
   
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* GIF Background */}
+      
       <div className="absolute inset-0 w-full h-full">
         <img
           src={bgGif}
           alt="Background"
           className="w-full h-full object-cover"
         />
-        {/* Optional overlay for better text readability */}
+        
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
       
-      {/* Content */}
+      
       <div className='relative z-10 flex flex-col-reverse md:flex-row items-center min-h-screen px-6 md:px-12 lg:px-20 gap-10'>
         <div className='w-full md:w-[50%] text-center md:text-left'>
           <h1 className='text-3xl sm:text-4xl lg:text-5xl font-serif leading-tight text-white'>

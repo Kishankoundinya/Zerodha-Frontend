@@ -5,7 +5,7 @@ const Stats = () => {
   return (
     <div className='relative bg-gradient-to-b from-[#00001b] via-[#01012b] to-[#00001b] min-h-screen flex flex-col md:flex-row items-center px-6 md:px-12 lg:px-20 gap-12 overflow-hidden'>
       
-      {/* Background decorative elements */}
+      
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-1/2 left-0 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl"></div>
